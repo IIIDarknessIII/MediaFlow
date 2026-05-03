@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MediaFlow Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #020617;
+  position: fixed;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: #94a3b8;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.main {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  flex: 1;
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.video {
+  background: #020617;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.video img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  background: #6366f1;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <h2>MediaFlow</h2>
+  <a href="#">Dashboard</a>
+  <a href="#">Videos</a>
+  <a href="#">Analytics</a>
+  <a href="#">Settings</a>
+</div>
+
+<div class="main">
+
+  <h1>Dashboard</h1>
+
+  <div class="card">
+    <h3>Connected Account</h3>
+    <p>@demo_creator</p>
+    <p>Status: Connected</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <h2>12.4K</h2>
+      <p>Followers</p>
+    </div>
+    <div class="stat">
+      <h2>340K</h2>
+      <p>Likes</p>
+    </div>
+    <div class="stat">
+      <h2>58</h2>
+      <p>Videos</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:40px;">Recent Videos</h2>
+
+  <div class="video-list">
+    <div class="video">
+      <img src="https://via.placeholder.com/300x500">
+      <p>Video Title 1</p>
+    </div>
+    <div class="video">
+      <img src="https://via.placeholder.com/300x500">
+      <p>Video Title 2</p>
+    </div>
+    <div class="video">
+      <img src="https://via.placeholder.com/300x500">
+      <p>Video Title 3</p>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;">
+    <a href="#" class="btn">Upload Video</a>
+  </div>
+
+</div>
+
+</body>
+</html>
